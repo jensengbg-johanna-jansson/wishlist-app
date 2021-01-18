@@ -1,0 +1,70 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.create-list-container {
+  @include centeredFlex();
+  @include absolute0TL();
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba($color: #ffffff, $alpha: .5);
+}
+
+.create-list {
+  width: 90vw;
+  background: #ffffff;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+}
+
+.create-list-pick-name, .create-list-pick-img {
+  @include centerAlignedFlex(column);
+}
+
+.create-list h2 {
+  @include headerHeading();
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.create-list-input {
+  margin-bottom: 2rem;
+}
+
+.create-list-input input {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.create-list-img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.create-list-img-button {
+  @include buttonReset();
+}
+
+.create-list-img-button img {
+  width: 100%;
+  border: 4px solid #ffffff;
+  transition: border .3s ease;
+}
+
+.create-list-img-radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.create-list-img-button input:checked + img {
+  border: 4px solid $pink;
+}
+
+.create-list-add-button {
+  background: $green;
+  @include imgElipse(4rem);
+  font-size: 2rem;
+}

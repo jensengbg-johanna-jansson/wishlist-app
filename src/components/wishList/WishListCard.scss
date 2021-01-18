@@ -1,0 +1,42 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.wishlist-card {
+    width: 100%;
+    padding: .5rem;
+
+    display: grid;
+    grid-template-columns: 4.8rem 1fr min-content;
+    grid-column-gap: 1rem;
+    align-items: center;
+
+    border-bottom: 1px solid $pink;
+}
+
+.wishlist-card-img {
+    @include imgElipse(4.8rem);
+    grid-row: span 3;
+
+    background: #c4c4c4;
+}
+
+.wishlist-card-item-name {
+    font-size: 1rem;
+}
+
+.wishlist-card-seller {
+    @include textLowFocus();
+}
+
+.wishlist-card-link {
+    @include link();
+    margin-top: .5rem;
+}
+
+.wishlist-card-checkbox {
+    grid-row: span 3;
+    width: 2rem;
+    height: 2rem;
+
+    justify-self: end;
+}

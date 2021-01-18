@@ -1,0 +1,61 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.new-wishlist-item-container {
+    width: 100vw;
+    height: 100vh;
+    @include centeredFlex();
+    @include absolute0TL();
+}
+
+.new-wishlist-item-overlay {
+    background: rgba(255, 255, 255, .5);
+    width: 100vw;
+    height: 100vh;
+    @include absolute0TL();
+}
+
+.new-wishlist-item-form {
+    background: #ffffff;
+    box-shadow: 0 0 2px $black50;
+
+    width: 85vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    z-index: 99;
+}
+
+.new-wishlist-item-heading {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.new-wishlist-item-label {
+    font-size: .75rem;
+}
+
+.new-wishlist-item-button {
+    background: $green;
+    color: $textColorOnPink;
+    
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    
+    @include centeredFlex();
+    align-self: center;
+
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.new-wishlist-item-form input {
+    margin-bottom: 2rem;
+}

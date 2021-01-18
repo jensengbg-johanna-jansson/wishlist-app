@@ -1,0 +1,36 @@
+.wishlist-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.whishlist-stack-list {
+    width: inherit;
+}
+
+/* Transitions */
+.fadeandslide-enter {
+    opacity: 0.01;
+    transform: translateY(2rem);
+}
+
+.fadeandslide-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s ease;
+
+}
+
+.fadeandslide-exit {
+    opacity: 1;
+    height: 4rem;
+    transform: translateX(0);
+}
+
+.fadeandslide-exit-active {
+    opacity: 0.01;
+    height: 0;
+    transform: translateX(-50vw);
+    transition: transform .2s ease, height .3s .2s linear, opacity .2s ease;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.user-icon {
+  @include imgElipse(1.75rem);
+  @include centeredFlex;
+}
+
+.user-icon i {
+  color: #ffffff;
+}
+
+.user-purple {
+  background: $userPurple;
+}
+
+.user-orange {
+  background: $userOrange;
+}
+
+.user-green {
+  background: $userGreen;
+}

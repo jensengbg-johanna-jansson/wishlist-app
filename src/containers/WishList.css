@@ -1,0 +1,35 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 84vh;
+    padding-bottom: 1rem;
+}
+
+.add-item-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* Transitions */
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: all 1s ease-out;
+
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: all 1s ease-in;
+}

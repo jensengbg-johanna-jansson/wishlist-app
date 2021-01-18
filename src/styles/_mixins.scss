@@ -1,0 +1,95 @@
+/* Text */
+@mixin mainText {
+    font-size: 1rem;
+    font-weight: $fontNormal;
+}
+
+@mixin label {
+    font-size: .75rem;
+    font-weight: $fontNormal;
+    color: $textColorOnWhite;
+    text-align: left;
+}
+
+@mixin cardHeadingSmall {
+    font-size: 1rem;
+    font-weight: $fontBold;
+    color: $textColorOnWhite;
+    text-align: left;
+}
+
+@mixin cardHeadingLarge {
+    font-size: 1.25rem;
+    font-weight: $fontBold;
+    color: $textColorOnWhite;
+    text-align: left;
+}
+
+@mixin headerHeading {
+    font-size: 1.5rem;
+    font-weight: $fontBold;
+    color: $textColorOnPink;
+    text-align: left;
+}
+
+@mixin textLowFocus {
+    font-size: .75rem;
+    font-weight: $fontNormal;
+    color: $black75;
+    text-align: left;
+}
+
+@mixin link {
+    font-size: 1rem;
+    font-weight: $fontNormal;
+    color: $pink;
+    text-align: left;
+    text-decoration: underline;
+}
+
+@mixin placeholder {
+    font-size: 1rem;
+    font-weight: $fontNormal;
+    color: $black50;
+    text-align: left;
+}
+
+/* Buttons */
+@mixin buttonReset {
+    background: none;
+    border: none;
+    font-family: $fontFamily;
+}
+
+@mixin buttonElipse($size) {
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+/* Images */
+@mixin imgElipse($size) {
+    width: $size;
+    height: $size;
+    border-radius: $size;
+}
+
+/* Alignment */
+@mixin centeredFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerAlignedFlex($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    align-items: center;
+}
+
+@mixin absolute0TL() {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

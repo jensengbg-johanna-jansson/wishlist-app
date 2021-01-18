@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# React practice app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an experimental project I started for me to test and practice different aspects of React.
+
+Currently I have experimented with the following tools in this project:
+Redux
+React Router
+React Transition Group / CSSTransition
+
 
 ## Available Scripts
 

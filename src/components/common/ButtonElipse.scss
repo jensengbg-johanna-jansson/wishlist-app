@@ -1,0 +1,13 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.button-elipse {
+  @include buttonReset();
+  @include buttonElipse(3rem);
+  background: $pink;
+  font-size: 1.5rem;
+}
+
+.button-elipse i {
+  color: $textColorOnPink;
+}

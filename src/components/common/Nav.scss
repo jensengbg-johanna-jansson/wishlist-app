@@ -1,0 +1,88 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.nav {
+    background: $pink;
+    width: 100vw;
+    height: 16vh;
+    padding-top: $normalPadding;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+    color: $textColorOnPink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+        @include buttonReset;
+    }
+}
+
+.nav-top-bar {
+    @include centerAlignedFlex(row);
+    margin-left: $normalPadding;
+}
+
+.nav-menu-button {
+    font-size: 2rem;
+    color: $textColorOnPink;
+    margin-right: 1rem;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nav-back-icon {
+    font-size: 1.75rem;
+    color: $textColorOnPink;
+    margin-right: 1rem;
+}
+
+.nav-default-submenu {
+    @include centerAlignedFlex(row);
+    width: 100%;
+    position: relative;
+    padding: $normalPadding;
+}
+
+.nav-home-submenu {
+    @include centerAlignedFlex(row);
+    width: 100%;
+    position: relative;
+}
+
+.nav-home-submenu-button {
+    @include mainText;
+    text-align: center;
+    width: 50%;
+    height: 2.5rem;
+    color: $white75;
+    transition: all .3s ease-in;
+}
+
+.nav-home-submenu-current-underline {
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $textColorOnPink;
+    transition: all .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.current-right {
+    transform: translateX(100%);
+}
+
+.current {
+    color: $textColorOnPink;
+    text-shadow: 0 0 .65px $textColorOnPink, 0 0 .65px $textColorOnPink;
+}
+
+.nav-list-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    display: none;
+}

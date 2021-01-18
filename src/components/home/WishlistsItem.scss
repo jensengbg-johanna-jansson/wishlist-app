@@ -1,0 +1,45 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.wishlist {
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    grid-template-areas: 
+    "img name"
+    "img edited";
+    grid-template-columns: 6.25rem 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: .5rem;
+    background: #ffffff;
+    box-shadow: 1px 0 2px 1px $black25;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.wishlist-img {
+    height: 100%;
+    width: 100%;
+    background: #c4c4c4;
+    grid-area: img;
+}
+
+.wishlist-img img {
+    width: 100%;
+}
+
+.wishlist-name {
+    @include cardHeadingLarge;
+    align-self: end;
+}
+
+.wishlist-edited {
+    @include textLowFocus;
+}
+
+.wishlist-user {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
